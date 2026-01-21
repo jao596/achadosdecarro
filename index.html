@@ -1,111 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Promoções Automotivas no WhatsApp!</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<style>
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #111111; /* fundo grafite */
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoções Automotivas no WhatsApp!</title>
 
-header {
-  text-align: center;
-  padding: 50px 20px 20px;
-}
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-header h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  color: #E53935; /* vermelho automotivo agradável */
-  text-shadow: 1px 1px 3px #000;
-}
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
 
-header p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #C0C0C0; /* prata metálico */
-}
+  fbq('init', '1597510661402531');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1597510661402531&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
-.badge {
-  font-weight: bold;
-  color: #FFD700; /* dourado para ofertas */
-  margin-bottom: 20px;
-  display: block;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #111111;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-.pulse-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
-  box-shadow: 0 5px 15px rgba(229,57,53,0.6);
-  animation: pulse 1.5s infinite;
-}
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      max-width: 600px;
+    }
 
-@keyframes pulse {
-  0% { transform: scale(1); box-shadow: 0 5px 15px rgba(229,57,53,0.5); }
-  50% { transform: scale(1.1); box-shadow: 0 8px 25px rgba(229,57,53,0.7); }
-  100% { transform: scale(1); box-shadow: 0 5px 15px rgba(229,57,53,0.5); }
-}
+    header h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #E53935;
+      text-shadow: 1px 1px 3px #000;
+    }
 
-.cta-button {
-  display: inline-block;
-  padding: 20px 40px;
-  background-color: #E53935; /* vermelho automotivo */
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  border-radius: 10px;
-  text-decoration: none;
-  box-shadow: 0 5px 15px rgba(229,57,53,0.5);
-  transition: transform 0.2s ease;
-  margin-top: 10px;
-}
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #C0C0C0;
+    }
 
-.cta-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 25px rgba(229,57,53,0.7);
-}
+    .badge {
+      font-weight: bold;
+      color: #FFD700;
+      margin-bottom: 20px;
+      display: block;
+    }
 
-.social-proof {
-  margin-top: 30px;
-  font-size: 1.2rem;
-  color: #FFD700; /* dourado */
-  font-weight: bold;
-  text-shadow: 1px 1px 2px #000;
-}
+    .pulse-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      box-shadow: 0 5px 15px rgba(229,57,53,0.6);
+      animation: pulse 1.5s infinite;
+    }
 
-footer {
-  margin-top: auto;
-  padding: 20px;
-  font-size: 0.8rem;
-  text-align: center;
-  color: #C0C0C0;
-  background-color: #222222;
-}
-</style>
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 5px 15px rgba(229,57,53,0.5); }
+      50% { transform: scale(1.1); box-shadow: 0 8px 25px rgba(229,57,53,0.7); }
+      100% { transform: scale(1); box-shadow: 0 5px 15px rgba(229,57,53,0.5); }
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 20px 40px;
+      background-color: #E53935;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(229,57,53,0.5);
+      transition: transform 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 25px rgba(229,57,53,0.7);
+    }
+
+    .social-proof {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      color: #FFD700;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.8rem;
+      text-align: center;
+      color: #C0C0C0;
+      background-color: #222222;
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body>
+
 <header>
   <h2>🚗 PROMOÇÕES AUTOMOTIVAS DIRETO NO WHATSAPP</h2>
   <p>Cupons e ofertas exclusivas de peças, acessórios e carros todos os dias</p>
-  <span class="badge">OFERTAS 50%, 60%, 70% OFF</span>
+  <span class="badge">OFERTAS DE ATÉ 70% OFF</span>
 
-  <a href="https://chat.whatsapp.com/LPTuUYypTMi462aHd7XvlZ" target="_blank">
-    <img src="https://i.postimg.cc/V6qXWL0M/carro.jpg" alt="Promoções Automotivas" class="pulse-img" />
+  <!-- IMAGEM COM EVENTO LEAD -->
+  <a href="https://chat.whatsapp.com/LPTuUYypTMi462aHd7XvlZ"
+     target="_blank"
+     onclick="fbq('track', 'Lead');">
+    <img src="https://i.postimg.cc/V6qXWL0M/carro.jpg"
+         alt="Promoções Automotivas"
+         class="pulse-img">
   </a>
 
-  <a class="cta-button" href="https://chat.whatsapp.com/LPTuUYypTMi462aHd7XvlZ" target="_blank">
+  <!-- BOTÃO COM EVENTO LEAD -->
+  <a class="cta-button"
+     href="https://chat.whatsapp.com/LPTuUYypTMi462aHd7XvlZ"
+     target="_blank"
+     onclick="fbq('track', 'Lead');">
     QUERO PARTICIPAR
   </a>
 
@@ -113,8 +149,10 @@ footer {
 </header>
 
 <footer>
-Política de Privacidade | Termos de Uso <br>
-Direitos Reservados
+  Política de Privacidade | Termos de Uso<br>
+  Direitos Reservados
 </footer>
+
 </body>
 </html>
+
