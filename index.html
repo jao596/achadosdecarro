@@ -18,8 +18,16 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
+
   fbq('init', '758789572803528');
   fbq('track', 'PageView');
+
+  function trackLeadAndRedirect(url) {
+    fbq('track', 'Lead');
+    setTimeout(function () {
+      window.location.href = url;
+    }, 300); // tempo suficiente pro pixel disparar
+  }
   </script>
 
   <noscript>
@@ -74,6 +82,7 @@
       margin: 0 auto 20px;
       box-shadow: 0 5px 15px rgba(229,57,53,0.6);
       animation: pulse 1.5s infinite;
+      cursor: pointer;
     }
 
     @keyframes pulse {
@@ -94,6 +103,7 @@
       box-shadow: 0 5px 15px rgba(229,57,53,0.5);
       margin-top: 10px;
       transition: transform 0.2s ease;
+      cursor: pointer;
     }
 
     .cta-button:hover {
@@ -126,22 +136,15 @@
   <p>Cupons e ofertas exclusivas de peças, acessórios e carros todos os dias</p>
   <span class="badge">OFERTAS DE ATÉ 70% OFF</span>
 
-  <!-- IMAGEM COM EVENTO LEAD -->
-  <a href="https://chat.whatsapp.com/LPTuUYypTMi462aHd7XvlZ"
-     target="_blank"
-     rel="noopener noreferrer"
-     onclick="fbq('track', 'Lead');">
-    <img src="https://i.postimg.cc/V6qXWL0M/carro.jpg"
-         alt="Promoções Automotivas"
-         class="pulse-img">
-  </a>
+  <!-- IMAGEM -->
+  <img src="https://i.postimg.cc/V6qXWL0M/carro.jpg"
+       alt="Promoções Automotivas"
+       class="pulse-img"
+       onclick="trackLeadAndRedirect('https://chat.whatsapp.com/LPTuUYypTMi462aHd7XvlZ')">
 
-  <!-- BOTÃO COM EVENTO LEAD -->
+  <!-- BOTÃO -->
   <a class="cta-button"
-     href="https://chat.whatsapp.com/LPTuUYypTMi462aHd7XvlZ"
-     target="_blank"
-     rel="noopener noreferrer"
-     onclick="fbq('track', 'Lead');">
+     onclick="trackLeadAndRedirect('https://chat.whatsapp.com/LPTuUYypTMi462aHd7XvlZ')">
     QUERO PARTICIPAR
   </a>
 
@@ -155,6 +158,7 @@
 
 </body>
 </html>
+
 
 
 
